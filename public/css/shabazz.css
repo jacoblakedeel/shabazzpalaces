@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+
+.parallax {
+        /* The image used */
+        background-image: url("../images/banner.jpeg");
+    
+        /* Set a specific height */
+        height: 100vh;
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+.blueText{
+    color: blue;
+}
+
+.alhambraText{
+    font-family: Alhambra Deep;
+}
+@font-face{
+    font-family: 'Alhambra';
+    src: url('../../alhambra/ALHAMBRA.TTF');
+}
+
+
+.opacity{
+    opacity: 50%;
+    background-color: gray;
+}
+
+.z5{
+    z-index: 5;
+}
+.z10{
+    z-index: 10;
+}
+.z15{
+    z-index: 15;
+}
+.z20{
+    z-index: 20;
+}

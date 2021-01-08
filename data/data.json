@@ -1,0 +1,66 @@
+{
+    "albums": [{
+        "name": "Shabazz Palaces",
+        "shortname": "black_up",
+        "albumname" : "Black Up",
+        "summary" : "Black Up is the debut studio album by American hip hop duo Shabazz Palaces. It was released on June 28, 2011 in the United States on Sub Pop. The album was produced by Knife Knights at Gunbeat Serenade Studio in Outplace Palacelands.",
+        "artwork": ["/images/black_up.jpg"],
+        "tracklist": "1. Free Press and Curl<br>2. An Echo from the Hosts That Profess Infinitum<br>3. Are You... Can You... Were You? (Felt)<br>4. A Treatease Dedicated to the Avian Airess from North East Nubis (1000 Questions, 1 Answer)<br>5. Youlogy<br>6. Endeavors for Never (The Last Time We Spoke You Said You Were Not Here. I Saw You Though.)<br>7. Recollections of the Wraith<br>8. The King's New Clothes Were Made by His Own Hands<br>9. Yeah You<br>10. Swerve... The Reeping of All That Is Worthwhile (Noir Not Withstanding)",
+        "albumAM": "https://music.apple.com/us/album/black-up/669854622",
+        "albumSM": "https://open.spotify.com/album/2dNexssEWbK7rgh0veTjjz?si=kLlyhtaoTPe7VNffLtSY_Q"
+    },{
+        "name": "Shabazz Palaces",
+        "shortname": "lese_majesty",
+        "albumname" : "Lese Majesty",
+        "summary": "Lese Majesty is the second studio album by American hip hop duo Shabazz Palaces, released on July 29, 2014. The album features contributions from Thee Satisfaction’s Catherine Harris-White, Erik Blood and Thadillac. The album was produced by Shabazz Palaces and mixed by Blood at Protect and Exalt Labs in Seattle.",
+        "artwork": ["/images/Lese_Majesty.jpg"],
+        "tracklist": "1. Dawn in Luxor<br>2. Forerunner Foray<br>3. They Come in Gold <br>4. Solemn Swears <br>5. Harem Aria <br>6. Noetic Noiromantics <br>7. The Ballad of Lt. Maj. Winnings <br>8. Soundview <br>9. Ishmael <br>10. …down 155th in the MCM Snorkel <br>11. Divine of Form <br>12. #CAKE <br>13. Colluding Oligarchs <br>14. Suspicion of a Shape <br>15. MindGlitch Keytar TM Theme <br>16. Motion Sickness <br>17. New Black Wave <br>18. Sonic MythMap for the Trip Back",
+        "albumAM": "https://music.apple.com/us/album/lese-majesty/867147941",
+        "albumSM": "https://open.spotify.com/album/7t2G7ba8kNZV9a4GDVBeva?si=6cLGsj6yQsuPrHbaouj00g"
+    },{
+        "name": "Shabazz Palaces",
+        "shortname": "quazars_gangster_star",
+        "albumname" : "Quazarz: Born on a Gangster Star",
+        "summary": "Quazarz: Born on a Gangster Star is the third studio album by American hip hop duo Shabazz Palaces, released on July 14, 2017. The album was released simultaneously with and as a companion album to Quazarz vs. The Jealous Machines. The album features Thundercat, Loud Eyes Lou, The Palaceer Lazaro, and Darrius.",
+        "artwork" : ["/images/quazarz_gangster_star.jpg"],
+        "tracklist": "1. Since C.A.Y.A.<br>2. When Cats Claw<br>3. Shine A Light (feat. Thadillac)<br>4. Deesse Du Sang<br>5. Eel Dreams (feat. Loud Eyes Lou)<br>6. Parallax (feat. The Palaceer Lazaro)<br>7. Fine Ass Hairdresser<br>8. The Neurochem Mixalogue<br>9. That's How City Life Goes<br>10. Moon Whip Quaz (feat. Darrius)<br>11. Federalist Papers",
+        "albumAM": "https://music.apple.com/us/album/quazarz-born-on-a-gangster-star/1223553465",
+        "albumSM": "https://open.spotify.com/album/4DYAPANMO97ehApdqM2bDN?si=q1jxxthDSK2NuOkruldtYQ"
+    },{
+        "name": "Shabazz Palaces",
+        "shortname": "jealous_machines",
+        "albumname" : "Quazarz vs. The Jealous Machines",
+        "summary": "Quazarz vs. The Jealous Machines is the fourth studio album by American hip hop duo Shabazz Palaces, released on July 14, 2017. The album was released simultaneously with and as a companion album to Quazarz: Born on a Gangster Star. The album features Fly Guy Dai, Chimurenga Renaissance, The Shogun Shot, Purple Tape Nate, and LAZ.",
+        "artwork" : ["/images/jealous_machines.jpg"],
+        "tracklist": "1. Welcome to Quazarz<br>2. Gorgeous Sleeper Cell<br>3. Self-Made Follownaire<br>4. Atlaantis<br>5. Effeminence (feat. Fly Guy Dai, Chimurenga Renaissance)<br>6. Julian's Dream (Ode to a Bad) (feat. The Shogun Shot)<br>7. 30 Clip Extension<br>8. Love in the Time of Kanye (feat. Purple Tape Nate)<br>9. Sabonim in the Saab on 'em<br>10. The SS Quintessence<br>11. Late Night Phone Calls (feat. LAZ)<br>12. Quazarz on 23rd",
+        "albumAM": "https://music.apple.com/us/album/quazarz-vs-the-jealous-machines/1224281863",
+        "albumSM": "https://open.spotify.com/album/5itITkN2vVoe0ThYwr6mpA?si=-ICHQ1jqRsiGGGlpshWSbg"
+    },{
+        "name": "Shabazz Palaces",
+        "shortname": "don_diamonds",
+        "albumname" : "The Don of Diamond Dreams",
+        "summary": "Cruise the city in a night ship, dressed to kill in the Seville. Float down waterfalls and fountains, reclined on some pimp shit. The time zone ghost returns to paint a picture that echoes through infinity. The sun is put to rest, the soliloquy is killer bee. A diamond purpose lying beneath the surface. Nothing is ever what it seems, but forever is the theme. It’s time. Shabazz Palaces are back with yet another classic of divine mathematics design. More dazzling Afrofuturist sutras to illuminate distant constellations with sacred abstractions. Enter The Don of Diamond Dreams, raw and uncut, but glowing with 10,000 karat shine.",
+        "artwork" : ["/images/don_diamond.jpg"],
+        "tracklist": "1. Portal North: Panthera<br>2. Ad Ventures <br>3. Fast Learner (feat. Purple Tape Nate)<br>4. Wet<br>5. Chocolate Souffle<br>6. Portal South: Micah<br>7. Bad Bitch Walking (feat. Stas THEE Boss)<br>8. Money Yoga (feat. Darrius)<br>9. Thanking the Girls <br>10. Reg Walks by the Looking Glass (feat. Carlos Overall)",
+        "albumAM": "https://music.apple.com/us/album/the-don-of-diamond-dreams/1494246347",
+        "albumSM": "https://open.spotify.com/album/7H1PXSqS0JCv5jQnBde3UY?si=-m0NxNtgTSGbhDVH5GlZag"
+    },{
+        "name": "Shabazz Palaces",
+        "shortname": "shabazz_palaces_ep",
+        "albumname" : "Shabazz Palaces EP",
+        "summary": "Ushering in Shabazz Palaces as a force to be reckoned with, the combination of this self-titled EP and the concurrently released Of Light EP were an astounding introduction to a creative juggernaut.",
+        "artwork" : ["/images/shabazz_ep.jpg"],
+        "tracklist": "1. Kill White T...<br>2. 4 Shadows...<br>3. 32 Leaves...<br>4. Blastit...<br>5. Capital 5...<br>6. My Mac Yawns...<br>7. A Mess...",
+        "albumAM": "https://music.apple.com/us/album/shabazz-palaces/321253402",
+        "albumSM": "https://open.spotify.com/album/4tr3FhD328wDwhkpVTsPkU?si=tyrAw7doQMaj_qF7XyNVPw"
+    },{
+        "name": "Shabazz Palaces",
+        "shortname": "of_light",
+        "albumname" : "Of Light",
+        "summary": "Ushering in Shabazz Palaces as a force to be reckoned with, the combination of the Of Light EP and the concurrently released self-titled EP were an astounding introduction to a creative juggernaut.",
+        "artwork" : ["/images/of_light.jpg"],
+        "tracklist": "1. Gunbeat Falls<br>2. 100 SPH<br>3. Hottabatch<br>4. Chuch<br>5. Sparkles",
+        "albumAM": "https://music.apple.com/us/album/of-light/323663592",
+        "albumSM": "https://open.spotify.com/track/5QgM2jQLJrsdjM2Cho0klo?si=LT9Ru0CWTzaxzLowMz71MA"
+    }]
+    }
