@@ -2,12 +2,18 @@ body{
     background-color: black;
 }
 
+.row{
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
 .parallax {
         /* The image used */
         background-image: url("../images/banner.jpeg");
     
         /* Set a specific height */
-        height: 100vh;
+        height: 5000px;
     
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
@@ -16,22 +22,37 @@ body{
         background-size: cover;
     }
 
-.blueText{
-    color: blue;
+/* fonts */
+
+.bigShouldersFont{
+    /* font-size: large; */
+    color: black;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    text-shadow: 1px 1px silver;
 }
 
 .alhambraText{
     font-family: Alhambra Deep;
+}
+
+.alhambraText2{
+    font-family: Alhambra Deep;
+    color: rgb(123, 55, 55);
+    font-weight: 900;
 }
 @font-face{
     font-family: 'Alhambra';
     src: url('../../alhambra/ALHAMBRA.TTF');
 }
 
+.buttonBackground{
+    background-color: black;
+}
 
 .opacity{
     opacity: 50%;
     background-color: gray;
+    height: 100vh;
 }
 
 .z5{
@@ -45,4 +66,7 @@ body{
 }
 .z20{
     z-index: 20;
+}
+.z30{
+    z-index: 30;
 }

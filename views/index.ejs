@@ -8,6 +8,8 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/shabazz.css">
     </head>
     <body>
@@ -36,9 +38,9 @@
 
 
             <!--nav-->
-            <nav class="navbar navbar-expand-lg navbar-dark bgdeeppink cp-text-lightGray d-flex sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark d-flex sticky-top">
                 <!-- Button trigger modal -->
-                <button type="button" class="btn d-none d-md-block z20" data-toggle="modal" data-target="#exampleModal">
+                <!-- <button type="button" class="btn d-none d-md-block z20" data-toggle="modal" data-target="#exampleModal">
                     
                 </button>
                 
@@ -46,20 +48,24 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link afont" href="index.html">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link afont" href="/albums">Albums</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link afont" href="html/gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link afont" href="html/menu.html">Menu</a>
-                        </li>
-                    </ul> -->
-                </div>
+                    </ul>
+                </div> -->
             </nav>
             <!--end of nav-->
+            <main>
+                <div class="row alhambraText">
+                    <input style="height: 100px; width: 300px;" type="button" class="btn btn-info btn-outline-danger btn-rounded alhambraText z30 buttonBackground" value="albums" onclick=" relocate_home()">
+                </div>
+                <div class="row alhambraText">
+                    <iframe class="z30" width="560" height="315" src="https://www.youtube.com/embed/JUYaa7_Osik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+            </main>
+            
 
         </div>
         
@@ -68,5 +74,12 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script>
+            function relocate_home()
+            {
+                location.href = "/albums";
+            } 
+            </script>
     </body>
 </html>

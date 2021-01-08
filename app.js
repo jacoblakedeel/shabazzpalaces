@@ -9,7 +9,8 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 //routes
-app.use(require('./routes/index'))
+app.use(require('./routes/index'));
+app.use(require('./routes/albums'))
 
 
 
