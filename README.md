@@ -6,5 +6,5 @@ This is a website is a personal project dedicated to the hip-hop duo Shabazz Pal
 
 To create this project I used Javascript, Node.js, HTML, Bootstrap, CSS, and Express
 
-![Image of Yaktocat]
-(../images/readmepic.jpeg)
+![Image of Shabazz]
+(/images/readmepic.jpeg)
