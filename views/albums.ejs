@@ -1,105 +1,69 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/shabazz.css">
-        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <%- include('partials/template.ejs')  %>
     </head>
     <body>
-        <div class="container-fluid p-0 parallax">
-            <div class="header position-relative top">
-                <!--text-->
-                <div class="position-absolute top w-100 d-flex flex-column justify-content-center align-items-center z20">
-                    <div class="display-2 cp-text-accent d-none d-md-block alhambraText">
-                        discography
-                    </div>
-                    <div class="display-2 cp-text-accent d-md-none d-lg-none d-xl-none alhambraText">
-                        SPC
-                    </div>
-                </div>
-            </div>
-            <!--opacity-->
-            <div class="position-absolute top h-100 w-100 opacity z15">
-
-            </div>
-
-            <!--photo-->
-            <div class="position-absolute d-flex flex-column justify-content-center z10 h-100 w-100">
-                <!--header image-->
-                <!-- <img width="100%" src="/images/banner.jpg" alt=""> -->
-            </div>
-
-
-            <!--nav-->
-            <nav class="navbar navbar-expand-lg navbar-dark bgdeeppink cp-text-lightGray d-flex sticky-top">
-                <!-- Button trigger modal -->
-                <button type="button" class="btn d-none d-md-block z20" data-toggle="modal" data-target="#exampleModal">
-                    
-                </button>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link afont" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul> -->
-                </div>
-            </nav>
-            <!--end of nav-->
+        <div class="container-fluid p-0 parallaxAlbums">
+            <%- include('partials/content.ejs')  %>
             
                 <main>
-                    <div class="row alhambraText w-100 sticky-top">
-                        <input style="height: 100px; width: 450px;" type="button" class="col-4 btn btn-info btn-outline-danger btn-rounded alhambraText z30 buttonBackground" value="home" onclick=" relocate_home()">
-                        <input style="height: 100px; width: 450px;" type="button" class="col-4 btn btn-info btn-outline-danger btn-rounded alhambraText z30 buttonBackground" value="albums" onclick=" relocate_home()">
-                        <input style="height: 100px; width: 450px;" type="button" class="col-4 btn btn-info btn-outline-danger btn-rounded alhambraText z30 buttonBackground" value="merchandise" onclick=" relocate_home()">
+                    <div class="row">
+
                     </div>
                     <div class="row h-50 alhambraText2">
                     </div>
                     <% data.forEach(el => { %>
-                    <div class="row m-0">
-                        <div class="col-xs-block col-sm-9 col-md-7 col-lg-6 col-xl-5 w-100 d-flex justify-content-center align-items-center z20">
-                                <img src="<%= el.artwork %> " height="200px" alt="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="row mb-5">
+                        <div class="col-xs-block col-sm-9 col-md-7 col-lg-6 col-xl-5 w-100 d-flex justify-content-around align-items-center z20">
+                            <a href="/albums/<%= el.shortname %> "><img src="<%= el.artwork %> " height="200px" alt=""></a>
                                 <div class="bigShouldersFont">
-                                    <h2><%= el.albumname %></h2><br> 
-                                    <a href="<%= el.albumAM %> " style="display: inline-block; overflow: visible; border-radius: 13px; width: 83px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/app-icon-music/standard/en-US?size=83x83&h=8844d13154b9593dbb19fa4477b76b15" alt="App Icon Apple Music" style="border-radius: 13px; width: 53px; height: 53px;"></a>
-                                    <a href="<%= el.albumSM %> " style="display: inline-block; overflow: visible; border-radius: 13px; width: 83px; height: 83px;"><img src="/images/Spotify_Icon_CMYK_Green.png" alt="Spotify Icon" style="border-radius: 13px; width: 53px; height: 53px;"></a>
+                                    <a href="/albums/<%= el.shortname %> "><h4><%- el.albumname %></h4></a>
+                                    <button type="button" data-target="#modal-edit-user-<%= el.albumID%>" class="btn btn-outline-danger buttonBackground alhambraText" data-toggle="modal"">
+                                        Tracklist
+                                    </button><br><br>
+                                    <a href="<%= el.albumAM %> " target="_blank" style="display: inline-block; overflow: visible; border-radius: 13px; width: 83px; height: 83px;"><img src="https://tools.applemediaservices.com/api/badges/app-icon-music/standard/en-US?size=83x83&h=8844d13154b9593dbb19fa4477b76b15" alt="App Icon Apple Music" style="border-radius: 13px; width: 33px; height: 33px;"></a>
+                                    <a href="<%= el.albumSM %> " target="_blank" style="display: inline-block; overflow: visible; border-radius: 13px; width: 83px; height: 83px;"><img src="/images/Spotify_Icon_CMYK_Green.png" alt="Spotify Icon" style="border-radius: 13px; width: 33px; height: 33px;"></a><br>
                                 </div>
                         </div>
-                        <div class="col-xs-block col-sm-3 col-md-5 col-lg-6 col-xl-7 d-flex justify-content-center align-items-center z20">
-                            <p><h3 class="bigShouldersFont"><%= el.summary %></h3> 
-                            </p>
-                            
+                        <% if (pageID === 'individAlbum') { %>
+                         
+                            <div class="col-xs-block col-sm-3 col-md-5 col-lg-6 col-xl-7 d-flex justify-content-center align-items-center z20">
+                                <p><h3 class="bigShouldersFont" id="summaryContainer"><%= el.summary %></h3> 
+                                </p>
+                                
+                            </div>
+                        <% } %>
+                    </div>
+                    
+                    
+                    <div class="modal fade buttonBackground" id="modal-edit-user-<%= el.albumID %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content bigShouldersWhite buttonBackground">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id=""><%- el.name %> - <%- el.albumname %></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                <%- el.tracklist %>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
                         </div>
                     </div>
                     <% }) %>
+                    <div class="row">
+                        <input style="height: 100px; width: 450px;" type="button" class="col-4 btn btn-info btn-outline-danger btn-rounded alhambraText z30 buttonBackground" value="join chat palace" onclick=" relocate_chat()">
+                    </div>
                 </main>
-            </div>
-            
-
-
-
-
-
-
-
-
-
         </div>
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <%- include('partials/jsdefault.ejs')  %> 
     </body>
 </html>

@@ -1,0 +1,8 @@
+.chat-display {
+    min-height: 550px;
+    max-height: 40vh;
+    min-width: 950px;
+    max-width: 40vh;
+    overflow: scroll;
+    background-color: black;
+}

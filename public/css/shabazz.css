@@ -2,44 +2,110 @@ body{
     background-color: black;
 }
 
+a{
+    color: #d9534f;
+}
+
+a:hover{
+    color:transparent;
+    text-decoration: none;
+}
+
+
+hr{
+    border: 2px black;
+}
+
 .row{
     height: 300px;
     justify-content: center;
     align-items: center;
 }
+.row2{
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-buttons{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}
 
 .parallax {
         /* The image used */
-        background-image: url("../images/banner.jpeg");
+        background-image: url("../images/banner2.jpeg");
     
         /* Set a specific height */
-        height: 5000px;
+        height: 3000px;
     
         /* Create the parallax scrolling effect */
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        overflow: hidden;
+    }
+.parallaxAlbums {
+        /* The image used */
+        background-image: url("../images/banner2.jpeg");
+    
+        /* Set a specific height */
+        height: 3000px;
+    
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
     }
 
 /* fonts */
 
 .bigShouldersFont{
     /* font-size: large; */
+    color: #d9534f;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    text-shadow: 2px 2px black;
+    font-weight:800;
+}
+.bigShouldersFont2{
+    /* font-size: large; */
     color: black;
     font-family: 'Big Shoulders Stencil Text', cursive;
-    text-shadow: 1px 1px silver;
+    font-weight:800;
+}
+.bigShouldersWhite{
+    /* font-size: large; */
+    color: whitesmoke;
+    font-family: 'Big Shoulders Stencil Text', cursive;
 }
 
 .alhambraText{
     font-family: Alhambra Deep;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gold;
 }
 
 .alhambraText2{
     font-family: Alhambra Deep;
-    color: rgb(123, 55, 55);
+    color: #d9534f;
     font-weight: 900;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: gold;
 }
+
+.alhambraTextShadow{
+    font-family: Alhambra Deep;
+    color: #d9534f;
+    font-weight: 900;
+    text-shadow: 1px 1px black;
+}
+
+
+
 @font-face{
     font-family: 'Alhambra';
     src: url('../../alhambra/ALHAMBRA.TTF');
@@ -49,11 +115,6 @@ body{
     background-color: black;
 }
 
-.opacity{
-    opacity: 50%;
-    background-color: gray;
-    height: 100vh;
-}
 
 .z5{
     z-index: 5;

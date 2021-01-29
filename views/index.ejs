@@ -1,85 +1,52 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <%- include('partials/template.ejs')  %> 
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="/css/shabazz.css">
     </head>
     <body>
         <div class="container-fluid p-0 parallax">
-            <div class="header position-relative top">
-                <!--text-->
-                <div class="position-absolute top w-100 d-flex flex-column justify-content-center align-items-center z20">
-                    <div class="display-2 cp-text-accent d-none d-md-block alhambraText">
-                        Shabazz Palaces Central
-                    </div>
-                    <div class="display-2 cp-text-accent d-md-none d-lg-none d-xl-none alhambraText">
-                        SPC
-                    </div>
-                </div>
-            </div>
-            <!--opacity-->
-            <div class="position-absolute top h-100 w-100 opacity z15">
-
-            </div>
-
-            <!--photo-->
-            <div class="position-absolute d-flex flex-column justify-content-center z10 h-100 w-100">
-                <!--header image-->
-                <!-- <img width="100%" src="/images/banner.jpg" alt=""> -->
-            </div>
-
-
-            <!--nav-->
-            <nav class="navbar navbar-expand-lg navbar-dark d-flex sticky-top">
-                <!-- Button trigger modal -->
-                <!-- <button type="button" class="btn d-none d-md-block z20" data-toggle="modal" data-target="#exampleModal">
-                    
-                </button>
-                
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link afont" href="/albums">Albums</a>
-                        </li>
-                    </ul>
-                </div> -->
-            </nav>
-            <!--end of nav-->
+            <%- include('partials/content.ejs')  %><br><br><br>
+            
             <main>
                 <div class="row alhambraText">
-                    <input style="height: 100px; width: 300px;" type="button" class="btn btn-info btn-outline-danger btn-rounded alhambraText z30 buttonBackground" value="albums" onclick=" relocate_home()">
+                    
                 </div>
                 <div class="row alhambraText">
-                    <iframe class="z30" width="560" height="315" src="https://www.youtube.com/embed/JUYaa7_Osik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zc3LHxEjKNc?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                 </div>
-                
-            </main>
-            
+                <div class="row">
+                    <input style="height: 100px; width: 450px;" type="button" class="col-4 btn btn-info btn-outline-danger btn-rounded alhambraText z30 buttonBackground" value="join chat palace" onclick=" relocate_chat()">
+                </div>
+                <div class="container pb-cmnt-container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="panel panel-info  d-flex align-items-center justify-content-center">
+                                <div class="panel-body">
+                                    <label class="alhambraText2" for=""><h1>Show Shabazz Love</h1></label>
+                                    <form action="" class="form-inline">
+                                        
+                                        <input class="bigShouldersFont2 mb-3" type="text" placeholder="Name" name="name" id="userName"><br>
+                                        <input class="bigShouldersFont2 mb-3 pb-cmnt-textarea" type="text" placeholder="Leave Love" name="comment" id="commentInput">
+                                        
+                                        <button id="formSubmit" class="btn btn-outline-danger pull-right alhambraText2 buttonBackground" type="submit">Share</button> 
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
 
+                <div class="row bigShouldersWhite" id="">
+                    <div id="commentContainer">
+
+                    </div>
+                </div>
+            </main>
         </div>
         
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-        <script>
-            function relocate_home()
-            {
-                location.href = "/albums";
-            } 
-            </script>
+        <!--script partial-->>
+        <%- include('partials/jsdefault.ejs')  %> 
     </body>
 </html>
